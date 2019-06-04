@@ -1,4 +1,4 @@
-package ua.mkorniie.servlet;
+package main.java.ua.mkorniie.servlet;
 
 import javax.servlet.http.HttpServlet;
 
