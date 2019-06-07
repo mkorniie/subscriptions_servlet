@@ -1,10 +1,14 @@
 package ua.mkorniie.servlet;
 
 
+import freemarker.template.Configuration;
+import freemarker.template.TemplateExceptionHandler;
+import freemarker.template.Version;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 import ua.mkorniie.DAO.UserDAO;
 import ua.mkorniie.entity.User;
+import ua.mkorniie.services.Path;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,9 +16,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by mkorniie on 6/1/19.
@@ -24,7 +30,7 @@ import java.util.List;
 public class UserServlet extends HttpServlet {
     private UserDAO userDAO;
 
-    public void init() {
+    public void init_database() {
 //        PoolProperties p = new PoolProperties();
 //        p.setUrl("jdbc:mysql://localhost:3306/mysql");
 //        p.setDriverClassName("com.mysql.jdbc.Driver");
@@ -50,8 +56,6 @@ public class UserServlet extends HttpServlet {
 //                        "org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer");
 //        DataSource datasource = new DataSource();
 //        datasource.setPoolProperties(p);
-        userDAO = new UserDAO();
-
 //        String databaseHost = getServletContext().getInitParameter("db.username");
 //        String databaseUser = getServletContext().getInitParameter("db.username");
 //        String databasePassword = getServletContext().getInitParameter("db.password");
@@ -59,6 +63,31 @@ public class UserServlet extends HttpServlet {
 //        System.out.println(databaseHost);
 //        System.out.println(databaseUser);
 //        System.out.println(databasePassword);
+    }
+
+    public void init_freemarker() throws Exception {
+        Configuration cfg = new Configuration();
+        cfg.setDirectoryForTemplateLoading(new File(Path.getProjectPath() +
+                "/web/WEB-INF/templates"));
+        cfg.setIncompatibleImprovements(new Version(2, 3, 20));
+        cfg.setDefaultEncoding("UTF-8");
+        cfg.setLocale(Locale.US);
+        cfg.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
+    }
+
+//    TODO: handle ur exceptions like a man
+
+    public void init() {
+
+        init_database();
+        try {
+            init_freemarker();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        userDAO = new UserDAO();
+
+
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

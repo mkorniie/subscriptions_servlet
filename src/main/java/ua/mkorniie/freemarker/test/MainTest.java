@@ -4,11 +4,13 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateExceptionHandler;
 import freemarker.template.Version;
+import ua.mkorniie.services.Path;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -26,9 +28,11 @@ public class MainTest {
         // then reuse the same Configuration object elsewhere.
 
         Configuration cfg = new Configuration();
+        cfg.setDirectoryForTemplateLoading(new File(Path.getProjectPath() +
+                "/web/WEB-INF/templates"));
 
         // Where do we load the templates from:
-        cfg.setClassForTemplateLoading(MainTest.class, "templates");
+//        cfg.setClassForTemplateLoading(MainTest.class, "templates");
 
         // Some other recommended settings:
         cfg.setIncompatibleImprovements(new Version(2, 3, 20));
