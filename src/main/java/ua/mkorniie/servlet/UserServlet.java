@@ -2,6 +2,7 @@ package ua.mkorniie.servlet;
 
 
 import freemarker.template.Configuration;
+import freemarker.template.Template;
 import freemarker.template.TemplateExceptionHandler;
 import freemarker.template.Version;
 import org.apache.tomcat.jdbc.pool.DataSource;
@@ -16,9 +17,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -29,6 +30,7 @@ import java.util.Locale;
 @WebServlet("/")
 public class UserServlet extends HttpServlet {
     private UserDAO userDAO;
+    private Configuration cfg;
 
     public void init_database() {
 //        PoolProperties p = new PoolProperties();
@@ -66,7 +68,7 @@ public class UserServlet extends HttpServlet {
     }
 
     public void init_freemarker() throws Exception {
-        Configuration cfg = new Configuration();
+        cfg = new Configuration();
         cfg.setDirectoryForTemplateLoading(new File(Path.getProjectPath() +
                 "/web/WEB-INF/templates"));
         cfg.setIncompatibleImprovements(new Version(2, 3, 20));
@@ -116,6 +118,9 @@ public class UserServlet extends HttpServlet {
                 case "/update":
                     updateUser(request, response);
                     break;
+                case "/list":
+                    listUser(request, response);
+                    break;
                 default:
                     listUser(request, response);
                     break;
@@ -125,12 +130,39 @@ public class UserServlet extends HttpServlet {
         }
     }
 
+
+
+
+
+
+
+
+
+
     private void listUser(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        List<User> listUser = userDAO.selectAll();
-        request.setAttribute("listUser", listUser);
-        request.getRequestDispatcher("user-list.jsp").forward(request, response);
+//        List<User> listUser = userDAO.selectAll();
+        List<User> listUser = new ArrayList<>();
+        listUser.add(new User("First", "abc@abc.com", "Ukraine"));
+//        listUser.add(new User("Second", "def@def.com", "Ukraine"));
+//        Template template = cfg.getTemplate("user-list.ftl");
+        request.setAttribute("users", listUser);
+        request.getRequestDispatcher(Path.getProjectPath() + "web/WEB-INF/views/user-list.ftl").forward(request, response);
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
