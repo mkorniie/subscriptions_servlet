@@ -7,16 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b07bb4c5-002b-405f-85f4-8341da591791" name="Default" comment="ftl_working">
-      <change afterPath="$PROJECT_DIR$/output.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/freemarker-2.3.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/user-list.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/subscriptions_servlet_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/subscriptions_servlet_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/subscriptions_servlet_war_exploded/WEB-INF/classes/ua/mkorniie/entity/Name.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/subscriptions_servlet_war_exploded/WEB-INF/classes/ua/mkorniie/entity/Name.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/subscriptions_servlet_war_exploded/WEB-INF/classes/ua/mkorniie/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/subscriptions_servlet_war_exploded/WEB-INF/classes/ua/mkorniie/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/freemarker/test/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/freemarker/test/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/subscriptions_servlet_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/subscriptions_servlet_war_exploded/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/mkorniie/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/mkorniie/servlet/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,26 +55,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/index.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="51" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/user-form.jsp">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
-                  <caret line="150" selection-start-line="150" selection-end-line="150" />
+                <state relative-caret-position="300">
+                  <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -83,14 +74,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/services/Path.java">
+            <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="39" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="39" />
-                  <folding>
-                    <element signature="e#122#123#0" expanded="true" />
-                    <element signature="e#181#182#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="491">
+                  <caret line="241" column="1" lean-forward="true" selection-start-line="241" selection-start-column="1" selection-end-line="241" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -122,6 +109,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/login.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="330">
+                  <caret line="22" column="119" selection-start-line="22" selection-start-column="119" selection-end-line="22" selection-end-column="119" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
@@ -147,14 +143,23 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/freemarker/test/MainTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="194">
-                  <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+                <state relative-caret-position="223">
+                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="314">
+                  <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -211,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/DAOInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/StatementTemplates.java" />
         <option value="$PROJECT_DIR$/web/error.jsp" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java" />
         <option value="$PROJECT_DIR$/web/user-list.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -225,7 +229,12 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/services/Path.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/freemarker/test/MainTest.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/templates/user-list.ftl" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/templates/css/style.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/templates/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/templates/login.html" />
       </list>
     </option>
   </component>
@@ -255,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,6 +328,11 @@
             <path>
               <item name="subscriptions_servlet" type="b2602c69:ProjectViewProjectNode" />
               <item name="subscriptions_servlet" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subscriptions_servlet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subscriptions_servlet" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -338,7 +353,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,8 +361,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ua/mkorniie/freemarker/test/templates" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -642,6 +656,7 @@
       <workItem from="1559943370291" duration="100000" />
       <workItem from="1559993259250" duration="1572000" />
       <workItem from="1559997053822" duration="1320000" />
+      <workItem from="1560087772864" duration="2233000" />
     </task>
     <task id="LOCAL-00001" summary="all-redone:javaEEonIntellijl=:userDAOplusOlderClassesw/oDAO">
       <created>1559687892442</created>
@@ -661,12 +676,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26251000" />
+    <option name="totallyTimeSpent" value="28484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="399" y="23" width="2161" height="1337" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19018404" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19159982" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -675,9 +691,9 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25461847" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25461847" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -685,7 +701,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="10" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32931727" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32931727" />
@@ -694,7 +710,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.14487965" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.14487965" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Maven" order="7" />
@@ -764,13 +780,14 @@
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/mkorniie/freemarker/test/MainTest.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="userDAO" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -844,17 +861,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/output.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/user-form.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/services/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,10 +896,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="24" selection-end-line="25" />
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -893,44 +917,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="24" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/services/Path.java">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="39" />
-          <folding>
-            <element signature="e#122#123#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/freemarker/test/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="210">
+          <caret line="28" selection-start-line="28" selection-end-line="39" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="241" column="1" lean-forward="true" selection-start-line="241" selection-start-column="1" selection-end-line="241" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../lespringdeboot/src/main/resources/templates/hello-world.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/fin/subscriptions_servlet/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="119" selection-start-line="22" selection-start-column="119" selection-end-line="22" selection-end-column="119" />
         </state>
       </provider>
     </entry>

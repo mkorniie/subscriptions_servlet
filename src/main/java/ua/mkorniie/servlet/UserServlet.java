@@ -26,8 +26,8 @@ import java.util.Locale;
 /**
  * Created by mkorniie on 6/1/19.
  */
-//@WebServlet(name = "UserServlet", urlPatterns = {"/new", "/insert", "/delete", "/edit", "/update" })
-@WebServlet("/")
+@WebServlet(name = "UserServlet", urlPatterns = {"/new", "/insert", "/delete", "/edit", "/update", "/list" })
+//@WebServlet("/")
 public class UserServlet extends HttpServlet {
     private UserDAO userDAO;
     private Configuration cfg;

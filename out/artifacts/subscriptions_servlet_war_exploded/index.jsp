@@ -14,7 +14,7 @@
   <h1>Welcome to Subscriptions Webpage!</h1>
   <div>
     <p><a href="">List users</a></p>
-    <p><a href="">Create new user</a></p>
+    <p><a href="<%=request.getContextPath()%>/login">Login</a></p>
   </div>
   </body>
 </html>
