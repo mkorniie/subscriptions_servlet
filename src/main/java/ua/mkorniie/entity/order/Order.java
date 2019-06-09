@@ -11,7 +11,7 @@ public class Order {
     private Long id;
     private Long userId;
     private Long catalogueId;
-    private final Date orderDate = new Date();;
+    private final Date orderDate = new Date();
     private OrderStatus status;
     private PayMode payMode;
 }
