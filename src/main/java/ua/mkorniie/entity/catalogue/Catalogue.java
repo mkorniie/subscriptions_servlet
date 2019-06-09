@@ -1,16 +1,20 @@
 package ua.mkorniie.entity.catalogue;
 
-import ua.mkorniie.entity.catalogue.price.Price;
-
-import java.security.PublicKey;
 
 /**
  * Created by safety on 30.05.2019.
  */
 
+import lombok.*;
+
 /**
  * @// TODO: 30.05.2019 Make price-issues map? Separate class? wtf?
  */
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
 public class Catalogue {
     private Long id;
     private String index;

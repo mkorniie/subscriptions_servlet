@@ -16,7 +16,7 @@ import java.util.ArrayList;
 @ToString
 public class User {
     private Long id;
-    private String fullName;
+    private String name;
     private String passwordEncoded;
     private ArrayList<Role> roles;
     private String phone;

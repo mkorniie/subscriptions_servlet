@@ -58,16 +58,16 @@ public class UserDAO implements DAOInterface<User> {
     public void insert(User object) {
         System.out.println(INSERT_USERS_SQL);
 
-        try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
-            preparedStatement.setString(1, object.getName());
-            preparedStatement.setString(2, object.getEmail());
-            preparedStatement.setString(3, object.getCountry());
-            System.out.println(preparedStatement);
-            preparedStatement.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+//        try (Connection connection = getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
+//            preparedStatement.setString(1, object.getName());
+//            preparedStatement.setString(2, object.getEmail());
+//            preparedStatement.setString(3, object.getCountry());
+//            System.out.println(preparedStatement);
+//            preparedStatement.executeUpdate();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
     }
 
     /**
@@ -79,22 +79,22 @@ public class UserDAO implements DAOInterface<User> {
      */
     public User selectById(int id) {
         User user = null;
-        try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID);) {
-
-            preparedStatement.setInt(1, id);
-            System.out.println(preparedStatement);
-            ResultSet rs = preparedStatement.executeQuery();
-
-            while (rs.next()) {
-                String name = rs.getString("name");
-                String email = rs.getString("email");
-                String country = rs.getString("country");
-                user = new User(new Long(id), name, email, country);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+//        try (Connection connection = getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID);) {
+//
+//            preparedStatement.setInt(1, id);
+//            System.out.println(preparedStatement);
+//            ResultSet rs = preparedStatement.executeQuery();
+//
+//            while (rs.next()) {
+//                String name = rs.getString("name");
+//                String email = rs.getString("email");
+//                String country = rs.getString("country");
+//                user = new User(new Long(id), name, email, country);
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
         return user;
     }
 
@@ -103,49 +103,49 @@ public class UserDAO implements DAOInterface<User> {
      */
     public List<User> selectAll() {
         List<User> users = new ArrayList<>();
-        try (Connection connection = getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
-
-            System.out.println(preparedStatement);
-            ResultSet rs = preparedStatement.executeQuery();
-
-            while (rs.next()) {
-                int id = rs.getInt("id");
-                String name = rs.getString("name");
-                String email = rs.getString("email");
-                String country = rs.getString("country");
-                users.add(new User((long) id, name, email, country));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+//        try (Connection connection = getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
+//
+//            System.out.println(preparedStatement);
+//            ResultSet rs = preparedStatement.executeQuery();
+//
+//            while (rs.next()) {
+//                int id = rs.getInt("id");
+//                String name = rs.getString("name");
+//                String email = rs.getString("email");
+//                String country = rs.getString("country");
+//                users.add(new User((long) id, name, email, country));
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
         return users;
     }
 
     public boolean delete(int id) {
         boolean rowDeleted = false;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
-            statement.setInt(1, id);
-            rowDeleted = statement.executeUpdate() > 0;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+//        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
+//            statement.setInt(1, id);
+//            rowDeleted = statement.executeUpdate() > 0;
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
         return rowDeleted;
     }
 
     public boolean update(User object) {
         boolean rowUpdated = false;
-        try (Connection connection = getConnection();
-             PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
-            statement.setString(1, object.getName());
-            statement.setString(2, object.getEmail());
-            statement.setString(3, object.getCountry());
-            statement.setInt(4, Math.toIntExact(object.getId()));
-
-            rowUpdated = statement.executeUpdate() > 0;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+//        try (Connection connection = getConnection();
+//             PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
+//            statement.setString(1, object.getName());
+//            statement.setString(2, object.getEmail());
+//            statement.setString(3, object.getCountry());
+//            statement.setInt(4, Math.toIntExact(object.getId()));
+//
+//            rowUpdated = statement.executeUpdate() > 0;
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
         return rowUpdated;
     }
 }

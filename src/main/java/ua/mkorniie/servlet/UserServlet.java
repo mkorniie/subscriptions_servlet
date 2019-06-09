@@ -89,7 +89,7 @@ public class UserServlet extends HttpServlet {
         }
         userDAO = new UserDAO();
 
-
+        System.out.println(userDAO.getConnection());
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -143,7 +143,7 @@ public class UserServlet extends HttpServlet {
             throws SQLException, IOException, ServletException {
 //        List<User> listUser = userDAO.selectAll();
         List<User> listUser = new ArrayList<>();
-        listUser.add(new User("First", "abc@abc.com", "Ukraine"));
+//        listUser.add(new User("First", "abc@abc.com", "Ukraine"));
 //        listUser.add(new User("Second", "def@def.com", "Ukraine"));
 //        Template template = cfg.getTemplate("user-list.ftl");
         request.setAttribute("users", listUser);
@@ -186,8 +186,8 @@ public class UserServlet extends HttpServlet {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
         String country = request.getParameter("country");
-        User newUser = new User(name, email, country);
-        userDAO.insert(newUser);
+//        User newUser = new User(name, email, country);
+//        userDAO.insert(newUser);
         response.sendRedirect("list");
     }
 
@@ -198,8 +198,8 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String country = request.getParameter("country");
 
-        User book = new User(id, name, email, country);
-        userDAO.update(book);
+//        User book = new User(id, name, email, country);
+//        userDAO.update(book);
         response.sendRedirect("list");
     }
 
