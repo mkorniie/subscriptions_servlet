@@ -14,7 +14,7 @@
   <h1>Welcome to Subscriptions Webpage!</h1>
   <div>
     <p><a href="">List users</a></p>
-    <p><a href="<%=request.getContextPath()%>/login">Login</a></p>
+    <p><a href="/login">Login</a></p>
   </div>
   </body>
 </html>

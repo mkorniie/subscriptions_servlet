@@ -1,6 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
-<%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>--%>
 <html>
 <head>
     <title>User Management Application</title>
@@ -8,17 +6,13 @@
 </head>
 <body>
     <h1>User Management</h1>
-    <p>Hello, ${name}</p>
+    <p>}</p>
 
-    <form action="/update">
+    <form action="/register">
         Enter your name <input type="text" name="name">
         Enter id <input type="text" name ="id">
         Enter email <input type="text" name = "email">
         Enter country <input type="text" name="country">
-<%--        Long id = Long.parseLong(request.getParameter("id"));--%>
-<%--        String name = request.getParameter("name");--%>
-<%--        String email = request.getParameter("email");--%>
-<%--        String country = request.getParameter("country");--%>
         <input type="submit" value="Submit Query">
     </form>
 

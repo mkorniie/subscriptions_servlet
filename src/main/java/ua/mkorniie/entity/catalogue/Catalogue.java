@@ -7,6 +7,10 @@ package ua.mkorniie.entity.catalogue;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * @// TODO: 30.05.2019 Make price-issues map? Separate class? wtf?
  */
@@ -15,7 +19,10 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
+@Entity
 public class Catalogue {
+    @Id
+    @GeneratedValue
     private Long id;
     private String index;
     private String title;

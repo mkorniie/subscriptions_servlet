@@ -89,7 +89,7 @@ public class UserServlet extends HttpServlet {
         }
         userDAO = new UserDAO();
 
-        System.out.println(userDAO.getConnection());
+//        System.out.println(userDAO.getConnection());
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -174,10 +174,10 @@ public class UserServlet extends HttpServlet {
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        User existingUser = userDAO.selectById(id);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user-form.jsp");
-        request.setAttribute("user", existingUser);
-        dispatcher.forward(request, response);
+//        User existingUser = userDAO.selectById(id);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("user-form.jsp");
+//        request.setAttribute("user", existingUser);
+//        dispatcher.forward(request, response);
 
     }
 
@@ -206,8 +206,8 @@ public class UserServlet extends HttpServlet {
     private void deleteUser(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        userDAO.delete(id);
-        response.sendRedirect("list");
+//        userDAO.delete(id);
+//        response.sendRedirect("list");
 
     }
 }

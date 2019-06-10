@@ -4,6 +4,9 @@ package ua.mkorniie.entity;
 import lombok.*;
 import ua.mkorniie.entity.catalogue.Language;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.ArrayList;
 
 /**
@@ -14,7 +17,10 @@ import java.util.ArrayList;
 @Getter
 @Setter
 @ToString
+@Entity
 public class User {
+    @Id
+    @GeneratedValue
     private Long id;
     private String name;
     private String passwordEncoded;

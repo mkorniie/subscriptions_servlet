@@ -2,6 +2,9 @@ package ua.mkorniie.entity;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
 /**
@@ -12,7 +15,10 @@ import java.util.Date;
 @Getter
 @Setter
 @ToString
+@Entity
 public class Order {
+    @Id
+    @GeneratedValue
     private Long id;
     private final Date orderDate = new Date();
     private Long userId;
