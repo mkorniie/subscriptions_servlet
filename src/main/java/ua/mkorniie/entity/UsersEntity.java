@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import static javax.persistence.EnumType.STRING;
+
 @Entity
 @Table(name = "users", schema = "mydb")
 public class UsersEntity {
@@ -77,7 +79,7 @@ public class UsersEntity {
         this.email = email;
     }
 
-    @Basic
+    @Enumerated(STRING)
     @Column(name = "language")
     public Language getLanguage() {
         return language;

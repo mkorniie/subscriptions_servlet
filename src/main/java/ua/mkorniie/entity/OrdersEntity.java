@@ -9,7 +9,7 @@ import java.util.Objects;
 public class OrdersEntity {
     private int id;
     private Timestamp date;
-    private byte isExecuted;
+    private boolean isExecuted;
     private int sum;
     private int period;
 
@@ -35,11 +35,11 @@ public class OrdersEntity {
 
     @Basic
     @Column(name = "is_executed")
-    public byte getIsExecuted() {
+    public boolean getIsExecuted() {
         return isExecuted;
     }
 
-    public void setIsExecuted(byte isExecuted) {
+    public void setIsExecuted(boolean isExecuted) {
         this.isExecuted = isExecuted;
     }
 

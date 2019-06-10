@@ -3,6 +3,8 @@ package ua.mkorniie.entity;
 import javax.persistence.*;
 import java.util.Objects;
 
+import static javax.persistence.EnumType.STRING;
+
 @Entity
 @Table(name = "catalogue", schema = "mydb")
 public class CatalogueEntity {
@@ -52,7 +54,7 @@ public class CatalogueEntity {
         this.cover = cover;
     }
 
-    @Basic
+    @Enumerated(STRING)
     @Column(name = "language")
     public Language getLanguage() {
         return language;
