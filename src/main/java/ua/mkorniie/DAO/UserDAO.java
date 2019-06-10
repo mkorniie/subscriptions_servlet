@@ -9,14 +9,16 @@ import org.apache.tomcat.jdbc.pool.DataSource;
 import org.apache.tomcat.jdbc.pool.PoolProperties;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
  * Created by mkorniie on 6/1/19.
  */
 public class UserDAO  {
+
     public static void main(String[] args) {
-        entityManagerFactory = Persistence.createEntityManagerFactory("ru.easyjava.data.jpa.hibernate");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("ua.mkorniie.persistence");
         EntityManager em = entityManagerFactory.createEntityManager();
     }
 }
