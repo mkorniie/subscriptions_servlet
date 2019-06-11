@@ -24,13 +24,13 @@ public class LoginServlet extends HttpServlet {
 
         // CHANGE TO DB!
         if (login.equals("user") && password.equals("user")) {
-            request.getRequestDispatcher("templates/success_user.html").forward(request, response);
+            request.getRequestDispatcher("templates/user_view/success_user.html").forward(request, response);
         }
         if (login.equals("admin") && password.equals("admin")) {
-            request.getRequestDispatcher("templates/success_admin.html").forward(request, response);
+            request.getRequestDispatcher("templates/admin_view/success_admin.html").forward(request, response);
         }
         else {
-            request.getRequestDispatcher("templates/no-user-found.html").forward(request, response);
+            request.getRequestDispatcher("templates/user_view/no-user-found.html").forward(request, response);
         }
     }
 }

@@ -2,16 +2,12 @@ package ua.mkorniie.servlet;
 
 
 import freemarker.template.Configuration;
-import freemarker.template.Template;
 import freemarker.template.TemplateExceptionHandler;
 import freemarker.template.Version;
-import org.apache.tomcat.jdbc.pool.DataSource;
-import org.apache.tomcat.jdbc.pool.PoolProperties;
 import ua.mkorniie.DAO.UserDAO;
-import ua.mkorniie.entity.User;
+import ua.mkorniie.entity.UsersEntity;
 import ua.mkorniie.services.Path;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -142,7 +138,7 @@ public class UserServlet extends HttpServlet {
     private void listUser(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
 //        List<User> listUser = userDAO.selectAll();
-        List<User> listUser = new ArrayList<>();
+        List<UsersEntity> listUser = new ArrayList<>();
 //        listUser.add(new User("First", "abc@abc.com", "Ukraine"));
 //        listUser.add(new User("Second", "def@def.com", "Ukraine"));
 //        Template template = cfg.getTemplate("user-list.ftl");
