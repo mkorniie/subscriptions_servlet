@@ -28,40 +28,6 @@ public class UserServlet extends HttpServlet {
     private UserDAO userDAO;
     private Configuration cfg;
 
-    public void init_database() {
-//        PoolProperties p = new PoolProperties();
-//        p.setUrl("jdbc:mysql://localhost:3306/mysql");
-//        p.setDriverClassName("com.mysql.jdbc.Driver");
-//        p.setUsername("root");
-//        p.setPassword("");
-//        p.setJmxEnabled(true);
-//        p.setTestWhileIdle(false);
-//        p.setTestOnBorrow(true);
-//        p.setValidationQuery("SELECT 1");
-//        p.setTestOnReturn(false);
-//        p.setValidationInterval(30000);
-//        p.setTimeBetweenEvictionRunsMillis(30000);
-//        p.setMaxActive(100);
-//        p.setInitialSize(10);
-//        p.setMaxWait(10000);
-//        p.setRemoveAbandonedTimeout(60);
-//        p.setMinEvictableIdleTimeMillis(30000);
-//        p.setMinIdle(10);
-//        p.setLogAbandoned(true);
-//        p.setRemoveAbandoned(true);
-//        p.setJdbcInterceptors(
-//                "org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;"+
-//                        "org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer");
-//        DataSource datasource = new DataSource();
-//        datasource.setPoolProperties(p);
-//        String databaseHost = getServletContext().getInitParameter("db.username");
-//        String databaseUser = getServletContext().getInitParameter("db.username");
-//        String databasePassword = getServletContext().getInitParameter("db.password");
-//
-//        System.out.println(databaseHost);
-//        System.out.println(databaseUser);
-//        System.out.println(databasePassword);
-    }
 
     public void init_freemarker() throws Exception {
         cfg = new Configuration();
@@ -77,7 +43,6 @@ public class UserServlet extends HttpServlet {
 
     public void init() {
 
-        init_database();
         try {
             init_freemarker();
         } catch (Exception e) {

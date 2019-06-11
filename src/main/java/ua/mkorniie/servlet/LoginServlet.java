@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
                 request.getRequestDispatcher("templates/user_view/success_user.html").forward(request, response);
             }
             else if (login.equals("admin") && password.equals("admin")) {
-                request.getRequestDispatcher("templates/admin_view/success_admin.html").forward(request, response);
+                request.getRequestDispatcher("admin").forward(request, response);
             }
             request.getRequestDispatcher("templates/user_view/no-user-found.html").forward(request, response);
         } catch (Exception e) {}

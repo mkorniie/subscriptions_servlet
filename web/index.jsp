@@ -13,8 +13,8 @@
   <body>
   <h1>Welcome to Subscriptions Webpage!</h1>
   <div>
-    <p><a href="/register">Register</a></p>
     <p><a href="/login">Login</a></p>
+    <p><a href="/register">Register</a></p>
   </div>
   </body>
 </html>

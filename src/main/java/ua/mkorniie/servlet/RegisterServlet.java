@@ -30,8 +30,9 @@ public class RegisterServlet extends HttpServlet {
         role.add(Roles.USER);
         newUser.setRoles(role);
         newUser.setPhone(request.getParameter("phone"));
-        newUser.setPhone(request.getParameter("email"));
-        newUser.setLanguage(Language.valueOf(request.getParameter("language")));
-        System.out.println(newUser);
+        newUser.setEmail(request.getParameter("email"));
+        //TODO: connect to filter???
+        newUser.setLanguage(Language.eng);
+        
     }
 }
