@@ -24,7 +24,7 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         UsersEntity newUser = new UsersEntity();
-        newUser.setName(request.getParameter("name"));
+        newUser.setName(request.getParameter("first_name") + " " + request.getParameter("last_name"));
         newUser.setPasswordHash(PasswordEncoder.getSHA(request.getParameter("password")));
         ArrayList<Roles> role = new ArrayList<>();
         role.add(Roles.USER);
@@ -32,6 +32,6 @@ public class RegisterServlet extends HttpServlet {
         newUser.setPhone(request.getParameter("phone"));
         newUser.setPhone(request.getParameter("email"));
         newUser.setLanguage(Language.valueOf(request.getParameter("language")));
-
+        System.out.println(newUser);
     }
 }
