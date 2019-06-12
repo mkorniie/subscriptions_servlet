@@ -67,6 +67,7 @@ CREATE TABLE IF NOT EXISTS `workdb`.`publishers` (
                                                      `id` INT NOT NULL AUTO_INCREMENT,
                                                      `name` VARCHAR(45) NOT NULL,
                                                      `country` VARCHAR(45) NOT NULL,
+                                                     `description` TEXT NULL,
                                                      PRIMARY KEY (`id`))
     ENGINE = InnoDB;
 

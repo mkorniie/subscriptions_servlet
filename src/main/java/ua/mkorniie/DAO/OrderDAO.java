@@ -9,9 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderDAO {
-    private String jdbcURL = "jdbc:mysql://localhost:3306/workdb?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-    private String jdbcUsername = "root";
-    private String jdbcPassword = "";
 
     private static final String INSERT_USERS_SQL = "INSERT INTO users" + "  (name, pass, roles, phone, email, language) VALUES " +
             " (?, ?, ?, ?, ?, ?);";
@@ -22,26 +19,11 @@ public class OrderDAO {
     private static final String UPDATE_USERS_SQL = "UPDATE users SET name=?, pass=?, roles=?, phone=?, email=?, language=? where id = ?;";
     private static final String SELECT_USER_BY_NAME = "SELECT id, name, pass, roles, phone, email, language FROM users WHERE name = ?;";
 
-    /**
-     * TODO: change access level
-     */
-    private Connection getConnection() {
-
-
-        Connection connection = null;
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
-        } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
-        }
-        return connection;
-    }
 
     public void insert(User object) {
         System.out.println(INSERT_USERS_SQL);
 
-        try (Connection connection = getConnection();
+        try (Connection connection = Connector.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
             preparedStatement.setString(1, object.getFullName());
             preparedStatement.setString(2, object.getPasswordEncoded());
@@ -65,7 +47,7 @@ public class OrderDAO {
      */
     public User selectById(int id) {
         User user = null;
-        try (Connection connection = getConnection();
+        try (Connection connection = Connector.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID);) {
 
             preparedStatement.setInt(1, id);
@@ -89,7 +71,7 @@ public class OrderDAO {
 
     public User selectByName(String name) {
         User user = null;
-        try (Connection connection = getConnection();
+        try (Connection connection = Connector.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_NAME);) {
 
             preparedStatement.setString(1, name);
@@ -116,7 +98,7 @@ public class OrderDAO {
      */
     public List<User> selectAll() {
         List<User> users = new ArrayList<>();
-        try (Connection connection = getConnection();
+        try (Connection connection = Connector.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
 
             System.out.println(preparedStatement);
@@ -140,7 +122,7 @@ public class OrderDAO {
 
     public boolean delete(int id) {
         boolean rowDeleted = false;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
+        try (Connection connection = Connector.getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
             statement.setInt(1, id);
             rowDeleted = statement.executeUpdate() > 0;
         } catch (SQLException e) {
@@ -152,7 +134,7 @@ public class OrderDAO {
     //TODO: refactor
     public boolean update(User object) {
         boolean rowUpdated = false;
-        try (Connection connection = getConnection();
+        try (Connection connection = Connector.getConnection();
              PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL)) {
             statement.setString(1, object.getFullName());
             statement.setString(2, object.getPasswordEncoded());

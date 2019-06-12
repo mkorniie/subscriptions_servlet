@@ -11,29 +11,6 @@
 </head>
 <body>
 
-<!--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">-->
-<!--    <ul class="nav nav-pills">-->
-<!--        <li class="nav-item">-->
-<!--            <a class="nav-link active" href="#">Active</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item dropdown">-->
-<!--            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
-<!--            <div class="dropdown-menu">-->
-<!--                <a class="dropdown-item" href="#">Action</a>-->
-<!--                <a class="dropdown-item" href="#">Another action</a>-->
-<!--                <a class="dropdown-item" href="#">Something else here</a>-->
-<!--                <div class="dropdown-divider"></div>-->
-<!--                <a class="dropdown-item" href="#">Separated link</a>-->
-<!--            </div>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--            <a class="nav-link" href="#">Link</a>-->
-<!--        </li>-->
-<!--        <li class="nav-item">-->
-<!--            <a class="nav-link disabled" href="#">Disabled</a>-->
-<!--        </li>-->
-<!--    </ul>-->
-<!--</div>-->
 
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
     <h5 class="my-0 mr-md-auto font-weight-normal">Welcome, My Lord</h5>
@@ -50,75 +27,77 @@
     <p class="lead">Lorem ipsum</p>
 </div>
 
-<div class="container">
-    <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 box-shadow">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Free</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-            </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Pro</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-            </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Enterprise</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-            </div>
-        </div>
-    </div>
 
-    <div class="main">
-        <h1>Admin logged in succesfully!</h1>
 
-        <div>List of users with changing admin priveleges (with dropdown menu of enums etc.)
-            <br>
-            Plus total number of users
-        </div>
+<%--<div class="container">--%>
+<%--    <div class="card-deck mb-3 text-center">--%>
+<%--        <div class="card mb-4 box-shadow">--%>
+<%--            <div class="card-header">--%>
+<%--                <h4 class="my-0 font-weight-normal">Free</h4>--%>
+<%--            </div>--%>
+<%--            <div class="card-body">--%>
+<%--                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>--%>
+<%--                <ul class="list-unstyled mt-3 mb-4">--%>
+<%--                    <li>10 users included</li>--%>
+<%--                    <li>2 GB of storage</li>--%>
+<%--                    <li>Email support</li>--%>
+<%--                    <li>Help center access</li>--%>
+<%--                </ul>--%>
+<%--                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="card mb-4 box-shadow">--%>
+<%--            <div class="card-header">--%>
+<%--                <h4 class="my-0 font-weight-normal">Pro</h4>--%>
+<%--            </div>--%>
+<%--            <div class="card-body">--%>
+<%--                <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>--%>
+<%--                <ul class="list-unstyled mt-3 mb-4">--%>
+<%--                    <li>20 users included</li>--%>
+<%--                    <li>10 GB of storage</li>--%>
+<%--                    <li>Priority email support</li>--%>
+<%--                    <li>Help center access</li>--%>
+<%--                </ul>--%>
+<%--                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--        <div class="card mb-4 box-shadow">--%>
+<%--            <div class="card-header">--%>
+<%--                <h4 class="my-0 font-weight-normal">Enterprise</h4>--%>
+<%--            </div>--%>
+<%--            <div class="card-body">--%>
+<%--                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>--%>
+<%--                <ul class="list-unstyled mt-3 mb-4">--%>
+<%--                    <li>30 users included</li>--%>
+<%--                    <li>15 GB of storage</li>--%>
+<%--                    <li>Phone and email support</li>--%>
+<%--                    <li>Help center access</li>--%>
+<%--                </ul>--%>
+<%--                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>--%>
+<%--            </div>--%>
+<%--        </div>--%>
+<%--    </div>--%>
 
-        <div>publisher management
-            <br>
+<%--    <div class="main">--%>
+<%--        <h1>Admin logged in succesfully!</h1>--%>
 
-        </div>
+<%--        <div>List of users with changing admin priveleges (with dropdown menu of enums etc.)--%>
+<%--            <br>--%>
+<%--            Plus total number of users--%>
+<%--        </div>--%>
 
-        <div>orders list</div>
+<%--        <div>publisher management--%>
+<%--            <br>--%>
 
-        <div> changes to orders list - can change status</div>
+<%--        </div>--%>
 
-        <div>Statistics - see: total sum ; total sum per period;
-            number of orders; total number of orders per period</div>
-    </div>
+<%--        <div>orders list</div>--%>
+
+<%--        <div> changes to orders list - can change status</div>--%>
+
+<%--        <div>Statistics - see: total sum ; total sum per period;--%>
+<%--            number of orders; total number of orders per period</div>--%>
+<%--    </div>--%>
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
