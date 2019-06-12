@@ -12,4 +12,11 @@ public class Publisher {
     private String name;
     private String country;
     private String description;
+
+
+    public Publisher(String name, String country, String description) {
+        this.name = name;
+        this.country = country;
+        this.description = description;
+    }
 }

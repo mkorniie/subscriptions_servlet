@@ -18,9 +18,9 @@
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
     <h5 class="my-0 mr-md-auto font-weight-normal">Welcome, My Lord</h5>
     <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="/admin/users">Users</a>
-        <a class="p-2 text-dark" href="/admin/tables">Tables</a>
-        <a class="p-2 text-dark" href="/admin/stats">Statistics</a>
+        <a class="p-2 text-dark" href="/admin-users">Users</a>
+        <a class="p-2 text-dark" href="/admin-tables">Tables</a>
+        <a class="p-2 text-dark" href="/admin-stats">Statistics</a>
     </nav>
     <a class="btn btn-outline-primary" href="/">Logout</a>
 </div>
@@ -29,33 +29,53 @@
     <h1 class="display-4">Admin logged in succesfully!</h1>
     <p class="lead">Lorem ipsum</p>
 </div>
+<div class="wrapper-custom">
+    <h3 class="m-4">Publishers</h3>
+    <table class="table table-formatting m-4">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Country</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%  ArrayList<Publisher> publishers = (ArrayList<Publisher>) request.getAttribute("publishers");
+            for(Publisher publisher : publishers){    %>
+                <tr>
+                <th scope="row"><%=publisher.getId()%></th>
+                <td><%=publisher.getName()%></td>
+                <td><%=publisher.getCountry()%></td>
+                <td><%=publisher.getDescription()%></td>
 
-<h3>Publishers</h3>
-<table class="table">
-    <thead>
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Country</th>
-        <th scope="col">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <%  ArrayList<Publisher> publishers = (ArrayList<Publisher>) request.getAttribute("publishers");
-        for(Publisher publisher : publishers){    %>
-            <tr>
-            <th scope="row"><%=publisher.getId()%></th>
-            <td><%=publisher.getName()%></td>
-            <td><%=publisher.getCountry()%></td>
-            <td><%=publisher.getDescription()%></td>
-            </tr>
-    <% } %>
+                <td>
+                    <a href="/admin?method=remove&id=<%=publisher.getId()%>">Remove</a></td>
+                </tr>
+        <% } %>
+        </tbody>
+    </table>
 
-    </tbody>
-</table>
+    <form action="/admin-update" method="post" class="m-4">
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="name">Publisher name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group col-4">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" name="country">
+            </div>
+            <div class="form-group col-2">
+                <label for="desc">Description</label>
+                <input type="text" class="form-control" id="desc" name="desc">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+    </form>
 
-
-
+</div>
 
 <%--<div class="container">--%>
 <%--    <div class="card-deck mb-3 text-center">--%>
@@ -167,21 +187,9 @@
 </div>
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="../../assets/js/vendor/popper.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-<script src="../../assets/js/vendor/holder.min.js"></script>
-<script>
-    Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-    });
-</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>

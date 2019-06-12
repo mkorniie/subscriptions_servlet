@@ -264,3 +264,7 @@ input[type=text]:placeholder {
 .blue {
     background-color: #39ACED;
 }
+
+.wrapper-custom {
+    padding: 20px;
+}
