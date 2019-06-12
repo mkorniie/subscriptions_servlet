@@ -32,14 +32,17 @@ public class LoginServlet extends HttpServlet {
 
         //TODO: can be solved?
         try {
-            if (u != null && u.getPasswordEncoded().equals(PasswordEncoder.getSHA(password))) {
+            if (u == null) {
+                request.getRequestDispatcher("templates/user_view/no-user-found.html").forward(request, response);
+            }
+            if (u.getPasswordEncoded().equals(PasswordEncoder.getSHA(password))) {
                 if (u.getRole() == Roles.USER) {
                     request.getRequestDispatcher("templates/user_view/success_user.html").forward(request, response);
                 } else if (u.getRole() == Roles.ADMIN) {
                     request.getRequestDispatcher("admin").forward(request, response);
                 }
             }
-            request.getRequestDispatcher("templates/user_view/no-user-found.html").forward(request, response);
+            request.getRequestDispatcher("templates/user_view/wrong_pass.html").forward(request, response);
         } catch (Exception e) {
 //            e.printStackTrace();
         }
