@@ -13,7 +13,7 @@ import java.io.PushbackInputStream;
 import java.sql.SQLException;
 import java.util.List;
 
-@WebServlet(urlPatterns = {"/admin", "/admin/users", "/admin/tables", "/admin/stats", "/admin-update"})
+@WebServlet(urlPatterns = {"/admin", "/admin-users", "/admin-tables", "/admin-stats", "/admin-update"})
 public class AdminServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -45,7 +45,7 @@ public class AdminServlet extends HttpServlet {
                 processAdminRequest(request, response);
                 break;
             case "/admin-users":
-                showNewForm(request, response, "users_management.html");
+                showNewForm(request, response, "users_management.jsp");
                 break;
             case "/admin-tables":
                 showNewForm(request, response, "tables.jsp");
