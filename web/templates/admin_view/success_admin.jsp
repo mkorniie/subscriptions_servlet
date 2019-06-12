@@ -1,4 +1,7 @@
+<%@ page import="ua.mkorniie.entity.Publisher" %>
+<%@ page import="java.util.ArrayList" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%--<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>--%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +29,31 @@
     <h1 class="display-4">Admin logged in succesfully!</h1>
     <p class="lead">Lorem ipsum</p>
 </div>
+
+<h3>Publishers</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Country</th>
+        <th scope="col">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%  ArrayList<Publisher> publishers = (ArrayList<Publisher>) request.getAttribute("publishers");
+        for(Publisher publisher : publishers){    %>
+            <tr>
+            <th scope="row"><%=publisher.getId()%></th>
+            <td><%=publisher.getName()%></td>
+            <td><%=publisher.getCountry()%></td>
+            <td><%=publisher.getDescription()%></td>
+            </tr>
+    <% } %>
+
+    </tbody>
+</table>
+
 
 
 
