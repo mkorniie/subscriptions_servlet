@@ -6,11 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07bb4c5-002b-405f-85f4-8341da591791" name="Default" comment="Luckily-DB-Started-Working:no_reflection_userDAOinstead_+login_and_register">
-      <change afterPath="$PROJECT_DIR$/web/templates/user_view/wrong_pass.html" afterDir="false" />
+    <list default="true" id="b07bb4c5-002b-405f-85f4-8341da591791" name="Default" comment="Luckily-DB-Started-Working:no_reflection_userDAOinstead_+login_and_register_register_finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,7 +83,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/templates/admin_view/success_admin.jsp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
+                <state relative-caret-position="1770">
                   <caret line="118" column="63" selection-start-line="118" selection-start-column="63" selection-end-line="118" selection-end-column="63" />
                 </state>
               </provider>
@@ -121,7 +119,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
+                <state relative-caret-position="150">
                   <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -130,10 +128,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="das://8954e7e0-2fe0-4f3f-8ca3-ef5e33ca9cfe/schema/workdb/table/users">
               <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state projectRestartId="73ed9390-ba2d-4f46-96e2-f7845912818c">
+                <state projectRestartId="9f181914-d050-4a04-9948-ead2215fa48a">
                   <filtering>
                     <filter text="" />
                   </filtering>
@@ -141,11 +139,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" selection-start-line="29" selection-end-line="29" />
+                <state relative-caret-position="801">
+                  <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -157,7 +155,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/util/ReflectionUtil.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="394">
+                <state relative-caret-position="1215">
                   <caret line="89" column="36" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -169,8 +167,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="39" column="117" selection-start-line="39" selection-start-column="117" selection-end-line="39" selection-end-column="117" />
+                <state relative-caret-position="750">
+                  <caret line="50" selection-start-line="50" selection-end-line="50" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -242,7 +240,6 @@
         <option value="$PROJECT_DIR$/web/templates/admin_view/tables.jsp" />
         <option value="$PROJECT_DIR$/web/templates/admin_view/success_admin.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/AdminServlet.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/services/JSON.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/ReflectionableEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/UsersEntity.java" />
@@ -269,6 +266,7 @@
         <option value="$PROJECT_DIR$/web/templates/user_view/wrong_pass.html" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -306,11 +304,6 @@
             <path>
               <item name="subscriptions_servlet" type="b2602c69:ProjectViewProjectNode" />
               <item name="subscriptions_servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="subscriptions_servlet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="subscriptions_servlet" type="462c0819:PsiDirectoryNode" />
-              <item name="sql_outdated" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="subscriptions_servlet" type="b2602c69:ProjectViewProjectNode" />
@@ -785,7 +778,8 @@
       <workItem from="1560265689384" duration="12078000" />
       <workItem from="1560311903921" duration="10801000" />
       <workItem from="1560339793244" duration="1997000" />
-      <workItem from="1560343587231" duration="7122000" />
+      <workItem from="1560343587231" duration="7462000" />
+      <workItem from="1560358988757" duration="181000" />
     </task>
     <task id="LOCAL-00001" summary="all-redone:javaEEonIntellijl=:userDAOplusOlderClassesw/oDAO">
       <created>1559687892442</created>
@@ -892,17 +886,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560350650623</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Luckily-DB-Started-Working:no_reflection_userDAOinstead_+login_and_register_register_finished">
+      <created>1560351540462</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560351540462</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84679000" />
+    <option name="totallyTimeSpent" value="85019000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-75" y="37" width="2554" height="1330" extended-state="0" />
+    <frame x="50" y="29" width="2554" height="1330" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13495223" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1357484" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -913,7 +914,7 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32875606" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23182553" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23182553" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29725364" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -962,7 +963,8 @@
     <MESSAGE value="frontend-in-progress" />
     <MESSAGE value="Luckily-DB-Started-Working:reflection" />
     <MESSAGE value="Luckily-DB-Started-Working:no_reflection_userDAOinstead_+login_and_register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Luckily-DB-Started-Working:no_reflection_userDAOinstead_+login_and_register" />
+    <MESSAGE value="Luckily-DB-Started-Working:no_reflection_userDAOinstead_+login_and_register_register_finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Luckily-DB-Started-Working:no_reflection_userDAOinstead_+login_and_register_register_finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1380,8 +1382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="117" selection-start-line="39" selection-start-column="117" selection-end-line="39" selection-end-column="117" />
+        <state relative-caret-position="750">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
