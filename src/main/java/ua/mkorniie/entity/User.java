@@ -12,7 +12,7 @@ import java.util.HashMap;
 @ToString
 @Getter
 public class User implements ReflectionableEntity {
-    private Long id;
+    private Integer id;
     private String fullName;
     private String passwordEncoded;
     private Roles role;
@@ -28,6 +28,14 @@ public class User implements ReflectionableEntity {
         this.email = email;
         this.language = language;
     }
+
+//    public void setRole(String name) {
+//        this.role = Roles.valueOf(name);
+//    }
+//
+//    public void setLanguage(String name) {
+//        this.language = Language.valueOf(name);
+//    }
 
     public HashMap<String, String> getStringValues() {
         HashMap<String, String> map = new HashMap<>();

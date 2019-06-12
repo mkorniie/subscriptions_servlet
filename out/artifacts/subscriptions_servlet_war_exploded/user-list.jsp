@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%--<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>--%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
     <head>
         <title>Admin: User Management</title>
@@ -25,7 +25,7 @@
                 <th>Country</th>
                 <th>Actions</th>
             </tr>
-<%--            <c:forEach var="user" items="${listUser}">--%>
+            <c:forEach var="user" items="${listUser}">
                 <tr>
                     <td>${listUser[0].id}</td>
                     <td>${listUser[0].name}</td>
@@ -37,7 +37,7 @@
                         <a href="">Delete</a>
                     </td>
                 </tr>
-<%--            </c:forEach>--%>
+            </c:forEach>
         </div>
 
 

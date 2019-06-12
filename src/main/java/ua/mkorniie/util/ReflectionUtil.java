@@ -1,4 +1,4 @@
-package ua.mkorniie.DAO;
+package ua.mkorniie.util;
 
 import ua.mkorniie.entity.Language;
 import ua.mkorniie.entity.Roles;
@@ -34,9 +34,9 @@ public class ReflectionUtil {
 
     //TODO: change to Optionals
     //tested
-    public static ArrayList<String> getAllFieldNames(Object object) {
+    public static ArrayList<String> getAllFieldNames(Class cls) {
         ArrayList<String> result = new ArrayList<>();
-        Field[] fields = getAllFields(object);
+        Field[] fields = cls.getDeclaredFields();
         for (int i = 0; i < fields.length; i++) {
 //            System.out.println("The field is: " + fields[i].toString());
             result.add(fields[i].toString());
@@ -45,8 +45,8 @@ public class ReflectionUtil {
     }
 
     //tested
-    public static ArrayList<String> getFieldNamesButFirst(Object object) {
-        ArrayList<String> result = getAllFieldNames(object);
+    public static ArrayList<String> getFieldNamesButFirst(Class cls) {
+        ArrayList<String> result = getAllFieldNames(cls);
         result.remove(0);
 //        System.out.println(result);
         return result;
@@ -78,6 +78,27 @@ public class ReflectionUtil {
         return result;
     }
 
+    public static Object setFieldValues(ArrayList<String> set, Object object) {
+        ArrayList<String> result = new ArrayList<>();
+        Field[] fields = object.getClass().getDeclaredFields();
+        Object res = null;
+        for (int i = 0; i < fields.length; i++){
+            try {
+                Method method = object.getClass().getMethod("set" + StringUtil.capitalize(fields[i].getName()));
+                res = method.invoke(object, set.get(i));
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            }
+            return res;
+        }
+
+        return result;
+    }
+
     //tested
     public static ArrayList<String> getFieldValuesInStringButFirst(Object object) {
         ArrayList<String> result = getFieldValuesInString(object);
@@ -86,5 +107,4 @@ public class ReflectionUtil {
         }
         return result;
     }
-
 }

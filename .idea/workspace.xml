@@ -6,58 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b07bb4c5-002b-405f-85f4-8341da591791" name="Default" comment="frontend-in-progress">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_5_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql_outdated/updatedDb.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/ReflectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UniformDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/ReflectionableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/util/JSON.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_4_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
+    <list default="true" id="b07bb4c5-002b-405f-85f4-8341da591791" name="Default" comment="Luckily-DB-Started-Working:reflection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/myModel.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/sql_outdated/myModel.mwb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/mySimpleDb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_outdated/mySimpleDb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/DAOInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/DAOInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/ReflectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/util/ReflectionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UniformDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UniformDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/CatalogueEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/CatalogueEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/OrdersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/OrdersEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/PublishersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/PublishersEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/UsersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/UsersEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/services/PasswordEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/util/PasswordEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/services/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/util/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subscriptions_servlet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/subscriptions_servlet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/user-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/user-list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/mkorniie/util/JSON.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -108,26 +66,14 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6264881">
+    <splitter split-orientation="horizontal" split-proportion="0.4946352">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UniformDAO.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="181">
-                  <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UserDAO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -160,19 +106,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/DAOInterface.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/templates/user-list.ftl">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="540">
-                  <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+                  <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -181,21 +118,28 @@
             <entry file="file://$PROJECT_DIR$/web/user-list.jsp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
-                  <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+                  <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/subscriptions_servlet.iml">
-              <provider selected="true" editor-type-id="text-editor" />
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="31" selection-start-line="31" selection-start-column="2" selection-end-line="37" selection-end-column="7" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="435">
-                  <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+                  <caret line="29" selection-start-line="29" selection-end-line="29" />
                 </state>
               </provider>
             </entry>
@@ -205,53 +149,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/util/StringUtil.java">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/util/ReflectionUtil.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="24" selection-start-line="24" selection-end-line="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="das://8954e7e0-2fe0-4f3f-8ca3-ef5e33ca9cfe/schema/workdb/table/users">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state projectRestartId="73ed9390-ba2d-4f46-96e2-f7845912818c">
-                  <filtering>
-                    <filter text="" />
-                  </filtering>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8954e7e0-2fe0-4f3f-8ca3-ef5e33ca9cfe/console.sql">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/ReflectionableEntity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" selection-start-line="3" selection-end-line="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/Language.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                <state relative-caret-position="394">
+                  <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -259,29 +160,14 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/OrdersEntity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1230">
-                  <caret line="82" selection-start-line="1" selection-end-line="82" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/StatementTemplates.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                <state relative-caret-position="525">
+                  <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -313,6 +199,7 @@
       <find>href</find>
       <find>pojoFields</find>
       <find>mydb</find>
+      <find>select</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -325,7 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/order/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/catalogue/Country.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f4b0b7b6-855f-4da5-a3d9-9f01c281a738/console.sql" />
         <option value="$PROJECT_DIR$/web/templates/success_user.html" />
@@ -346,7 +232,6 @@
         <option value="$PROJECT_DIR$/web/templates/login.html" />
         <option value="$PROJECT_DIR$/web/templates/admin_view/success_admin.html" />
         <option value="$PROJECT_DIR$/web/templates/admin_view/users_management.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/web/templates/admin_view/statistics.jsp" />
         <option value="$PROJECT_DIR$/web/templates/admin_view/Tables.jsp" />
         <option value="$PROJECT_DIR$/web/templates/admin_view/tables.jsp" />
@@ -362,9 +247,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/OrdersEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/services/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/ReflectionUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/util/StringUtil.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f4b0b7b6-855f-4da5-a3d9-9f01c281a738/console_1.sql" />
@@ -373,9 +256,13 @@
         <option value="$PROJECT_DIR$/sql_outdated/updatedDb.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/web/user-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UniformDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/DAOInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/util/ReflectionUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UniformDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java" />
       </list>
     </option>
   </component>
@@ -394,9 +281,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="326" />
+    <option name="x" value="6" />
     <option name="y" value="23" />
-    <option name="width" value="2153" />
+    <option name="width" value="2554" />
     <option name="height" value="1330" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -470,7 +357,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mkorniie" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="subscriptions_servlet" type="b2602c69:ProjectViewProjectNode" />
@@ -561,7 +448,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UniformDAO">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.94">
     <configuration default="true" type="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -571,12 +458,12 @@
       </method>
     </configuration>
     <configuration name="ReflectionUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ua.mkorniie.DAO.ReflectionUtil" />
+      <option name="MAIN_CLASS_NAME" value="ua.mkorniie.util.ReflectionUtil" />
       <module name="subscriptions_servlet" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.mkorniie.DAO.*" />
+          <option name="PATTERN" value="ua.mkorniie.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -590,7 +477,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.mkorniie.DAO.*" />
+          <option name="PATTERN" value="ua.mkorniie.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -618,7 +505,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.mkorniie.DAO.*" />
+          <option name="PATTERN" value="ua.mkorniie.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -632,7 +519,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ua.mkorniie.DAO.*" />
+          <option name="PATTERN" value="ua.mkorniie.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -892,7 +779,7 @@
       <workItem from="1560265689384" duration="12078000" />
       <workItem from="1560311903921" duration="10801000" />
       <workItem from="1560339793244" duration="1997000" />
-      <workItem from="1560343587231" duration="2286000" />
+      <workItem from="1560343587231" duration="6221000" />
     </task>
     <task id="LOCAL-00001" summary="all-redone:javaEEonIntellijl=:userDAOplusOlderClassesw/oDAO">
       <created>1559687892442</created>
@@ -985,17 +872,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560280518351</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Luckily-DB-Started-Working:reflection">
+      <created>1560346201510</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560346201511</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79843000" />
+    <option name="totallyTimeSpent" value="83778000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="326" y="23" width="2153" height="1330" extended-state="0" />
+    <frame x="6" y="23" width="2554" height="1330" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1605874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13495223" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -1006,7 +900,7 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32875606" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23182553" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23182553" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29725364" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1018,14 +912,14 @@
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.32931727" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32875606" />
+      <window_info anchor="bottom" id="Messages" order="14" visible="true" weight="0.32875606" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.32875606" />
       <window_info anchor="bottom" id="SQL Generator" order="16" weight="0.19224556" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.14637612" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.123009555" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Maven" order="7" />
@@ -1053,7 +947,8 @@
     <MESSAGE value="login-user-added" />
     <MESSAGE value="login-user-issue_fixed" />
     <MESSAGE value="frontend-in-progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend-in-progress" />
+    <MESSAGE value="Luckily-DB-Started-Working:reflection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Luckily-DB-Started-Working:reflection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1186,16 +1081,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/ReflexionUtil" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://f4b0b7b6-855f-4da5-a3d9-9f01c281a738/schema/mydb/table/orders">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="fc34b7c1-7fea-42f9-b4e7-db4f2ba43e20">
@@ -1207,16 +1092,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1258,30 +1133,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/ReflectionUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1292,65 +1147,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/OrdersEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" selection-start-line="1" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/StatementTemplates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql_outdated/mySimpleDb.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="95" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/Language.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/ReflectionableEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8954e7e0-2fe0-4f3f-8ca3-ef5e33ca9cfe/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/util/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -1389,24 +1189,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/templates/register-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/templates/user-list.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/user-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1416,7 +1209,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -1430,10 +1223,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/StatementTemplates.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1448,15 +1241,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/DAOInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/templates/register-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/ReflectionableEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8954e7e0-2fe0-4f3f-8ca3-ef5e33ca9cfe/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/OrdersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="60" column="2" lean-forward="true" selection-start-line="60" selection-start-column="2" selection-end-line="60" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UniformDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        <state relative-caret-position="315">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-start-column="2" selection-end-line="37" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/entity/Language.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/util/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="108" column="32" lean-forward="true" selection-start-line="108" selection-start-column="32" selection-end-line="108" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/util/ReflectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ua/mkorniie/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
