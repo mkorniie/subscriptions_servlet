@@ -5,14 +5,14 @@ import java.util.List;
 /**
  * Created by mkorniie on 6/1/19.
  */
-public interface DAOInterface<E> {
+public interface DAOInterface {
 
-    void insert(E object);
+    void insert(Object object);
 
-    E selectById(int id);
-    List<E> selectAll();
+    Object selectById(Object object, int id);
+    List<Object> selectAll();
 
-    boolean delete(int id);
-    boolean update(E object);
+    boolean delete(Object object, int id);
+    boolean update(Object object);
 
 }

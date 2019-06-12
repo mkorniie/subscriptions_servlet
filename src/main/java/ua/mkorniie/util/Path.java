@@ -1,6 +1,4 @@
-package ua.mkorniie.services;
-
-import java.nio.file.Paths;
+package ua.mkorniie.util;
 
 public class Path {
     public static String getProjectPath() {

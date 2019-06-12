@@ -21,11 +21,11 @@ USE `mydb` ;
 -- Table `mydb`.`catalogue`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`catalogue` (
-                                                  `id` INT NOT NULL,
+                                                  `id` INT NOT NULL AUTO_INCREMENT,
                                                   `index` VARCHAR(45) NOT NULL,
                                                   `title` VARCHAR(45) NOT NULL,
                                                   `cover` VARCHAR(45) NULL,
-                                                  `language` JSON NOT NULL,
+                                                  `language` VARCHAR(15) NOT NULL,
                                                   `publishers_id` INT NOT NULL,
                                                   PRIMARY KEY (`id`),
                                                   INDEX `fk_catalogue_publishers_idx` (`publishers_id` ASC) ,
@@ -42,13 +42,13 @@ CREATE TABLE IF NOT EXISTS `mydb`.`catalogue` (
 -- Table `mydb`.`orders`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`orders` (
-                                               `id` INT NOT NULL,
-                                               `date` DATETIME NOT NULL,
+                                               `id` INT NOT NULL AUTO_INCREMENT,
+                                               `date` VARCHAR(100) NOT NULL,
                                                `users_id` INT NOT NULL,
                                                `catalogue_id` INT NOT NULL,
                                                `is_executed` TINYINT NOT NULL,
-                                               `sum` INT NOT NULL,
-                                               `period` INT NOT NULL,
+                                               `sum` VARCHAR(100) NOT NULL,
+                                               `period` VARCHAR(100) NOT NULL,
                                                PRIMARY KEY (`id`),
                                                INDEX `fk_orders_users1_idx` (`users_id` ASC) ,
                                                INDEX `fk_orders_catalogue1_idx` (`catalogue_id` ASC) ,
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`orders` (
 -- Table `mydb`.`publishers`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`publishers` (
-                                                   `id` INT NOT NULL,
+                                                   `id` INT NOT NULL AUTO_INCREMENT,
                                                    `name` VARCHAR(45) NOT NULL,
                                                    `country` VARCHAR(45) NOT NULL,
                                                    PRIMARY KEY (`id`))
@@ -80,13 +80,13 @@ CREATE TABLE IF NOT EXISTS `mydb`.`publishers` (
 -- Table `mydb`.`users`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`users` (
-                                              `id` INT NOT NULL,
+                                              `id` INT NOT NULL AUTO_INCREMENT,
                                               `name` VARCHAR(45) NOT NULL,
-                                              `password_hash` VARCHAR(100) NOT NULL,
-                                              `roles` JSON NOT NULL,
+                                              `pass` VARCHAR(100) NOT NULL,
+                                              `roles` VARCHAR(30) NOT NULL,
                                               `phone` VARCHAR(20) NOT NULL,
                                               `email` VARCHAR(45) NULL,
-                                              `language` JSON NOT NULL,
+                                              `language` VARCHAR(15) NOT NULL,
                                               PRIMARY KEY (`id`))
     ENGINE = InnoDB;
 

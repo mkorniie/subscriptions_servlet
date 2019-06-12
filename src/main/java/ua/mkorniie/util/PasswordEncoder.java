@@ -1,4 +1,4 @@
-package ua.mkorniie.services;
+package ua.mkorniie.util;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
