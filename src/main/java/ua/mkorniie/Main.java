@@ -9,7 +9,7 @@ public class Main {
         String country = "US";
 
         Locale locale = new Locale(language, country);
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("MessagesBundle", locale);
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("MessagesBundle_en_US", locale);
 
         Locale localeFrench = new Locale("fr", "FR");
         ResourceBundle resourceBundleF = ResourceBundle.getBundle("MessagesBundle_fr_FR", localeFrench);
