@@ -35,7 +35,7 @@
 
 
     <welcome-file-list>
-        <welcome-file>templates/login.html</welcome-file>
+        <welcome-file>templates/login.jsp</welcome-file>
     </welcome-file-list>
 
     <error-page>

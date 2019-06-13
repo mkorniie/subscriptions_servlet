@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
     // TODO: Это нафиг вообще нормальная практика? Гет в пост посылать
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("templates/login.html").forward(request, response);
+        request.getRequestDispatcher("templates/login.jsp").forward(request, response);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

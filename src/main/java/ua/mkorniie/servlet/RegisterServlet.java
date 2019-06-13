@@ -34,6 +34,6 @@ public class RegisterServlet extends HttpServlet {
 
         UserDAO userDAO = new UserDAO();
         userDAO.insert(newUser);
-        request.getRequestDispatcher("templates/login.html").forward(request, response);
+        request.getRequestDispatcher("templates/login.jsp").forward(request, response);
     }
 }

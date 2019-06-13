@@ -1,3 +1,6 @@
+<%@ page import="ua.mkorniie.util.Localization" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isErrorPage="true" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -7,12 +10,20 @@
     <link rel="stylesheet" href="http://localhost:8080/templates/css/style.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <title>Subscriptions Manager</title>
+    <title><%=Localization.getCurrentBundle().getString("login-title")%></title>
     <link rel = "icon" href ="https://www.pinclipart.com/picdir/big/163-1634137_brochure-markant-online-books-icons-clipart.png"
           type = "image/x-icon">
 </head>
 <body class="blue">
 
+<div class="lang-bar">
+    <a href="#">
+        <img src="http://localhost:8080/templates/img/ua-01.png" alt="ua-flag">
+    </a>
+    <a href="#">
+        <img src="http://localhost:8080/templates/img/us-01.png" alt="us-flag">
+    </a>
+</div>
 
 <div class="wrapper fadeInDown">
     <div id="formContent">
@@ -25,15 +36,15 @@
 <!---->
         <!-- Login Form -->
         <form action="login" method="post">
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-            <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
-            <input type="submit" class="fadeIn fourth" value="Log In">
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="<%=Localization.getCurrentBundle().getString("login-placeholder")%>">
+            <input type="text" id="password" class="fadeIn third" name="password" placeholder="<%=Localization.getCurrentBundle().getString("password-placeholder")%>">
+            <input type="submit" class="fadeIn fourth" value="<%=Localization.getCurrentBundle().getString("submit-value")%>">
         </form>
 
         <!-- Remind Passowrd -->
         <div id="formFooter">
 <!--            <a class="underlineHover" href="#">Forgot Password?</a>-->
-            <a class="underlineHover" href="/register">Register</a>
+            <a class="underlineHover" href="/register"><%=Localization.getCurrentBundle().getString("register-link-text")%></a>
         </div>
 
     </div>

@@ -5,6 +5,5 @@ package ua.mkorniie.entity;
  */
 public enum Language {
     ua,
-    ru,
     eng
 }
