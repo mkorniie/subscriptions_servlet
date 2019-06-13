@@ -1,6 +1,8 @@
 <%@ page import="ua.mkorniie.entity.User" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.List" %><%--
+<%@ page import="java.util.List" %>
+<%@ page import="ua.mkorniie.entity.Roles" %>
+<%@ page import="java.util.Arrays" %>
+<%@ page import="ua.mkorniie.entity.Language" %><%--
   Created by IntelliJ IDEA.
   User: mkorniie
   Date: 2019-06-11
@@ -53,6 +55,50 @@
     </tbody>
 </table>
 
+<div class="m-4">Add user</div>
+<form action="/admin-users-update" method="post" class="m-4">
+    <div class="form-row">
+        <div class="form-group col-2">
+            <label for="name">User name</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="form-group col-2">
+            <label for="pass">Password</label>
+            <input type="text" class="form-control" id="pass" name="pass">
+        </div>
+
+        <div class="form-group col-2">
+            <label for="role">Role</label>
+            <select class="browser-default custom-select" id="role" name="role">
+                <% List<Roles> roles = Arrays.asList(Roles.values());
+                    for (Roles r: roles) {%>
+                <option  value="<%=r.toString()%>"><%=r.toString()%></option>
+                <% }%>
+            </select>
+        </div>
+        <div class="form-group col-2">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone" name="phone">
+        </div>
+        <div class="form-group col-2">
+            <label for="mail">Email</label>
+            <input type="text" class="form-control" id="mail" name="mail">
+        </div>
+        <div class="form-group col-2">
+            <label for="lang">Language</label>
+            <select class="browser-default custom-select" id="lang" name="lang">
+                <% List<Language> languages = Arrays.asList(Language.values());
+                    for (Language l: languages) {%>
+                <option  value="<%=l.toString()%>"><%=l.toString()%></option>
+                <% }%>
+            </select>
+<%--            <input type="text" class="form-control" id="lang" name="lang">--%>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+<a href="/admin">Back to main page</a>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>

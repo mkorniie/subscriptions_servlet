@@ -2,9 +2,12 @@ package ua.mkorniie.servlet;
 
 import ua.mkorniie.DAO.PublisherDAO;
 import ua.mkorniie.DAO.UserDAO;
+import ua.mkorniie.entity.Language;
 import ua.mkorniie.entity.Publisher;
+import ua.mkorniie.entity.Roles;
 import ua.mkorniie.entity.User;
 import ua.mkorniie.util.DeleteUserCommand;
+import ua.mkorniie.util.PasswordEncoder;
 import ua.mkorniie.util.ToAdminCommand;
 import ua.mkorniie.util.ToUserCommand;
 
@@ -17,7 +20,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-@WebServlet(urlPatterns = {"/admin", "/admin-users", "/admin-tables", "/admin-stats", "/admin-update"})
+@WebServlet(urlPatterns = {"/admin", "/admin-users", "/admin-tables", "/admin-stats", "/admin-update", "/admin-users-update"})
 public class AdminServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -33,6 +36,16 @@ public class AdminServlet extends HttpServlet {
                 String description = request.getParameter("desc");
                 new PublisherDAO().insert(new Publisher(name, country, description));
                 showAdminPage(request, response);
+                break;
+            case "/admin-users-update":
+                name = request.getParameter("name");
+                String password = PasswordEncoder.getSHA(request.getParameter("pass"));
+                Roles  role = Roles.valueOf(request.getParameter("role"));
+                String phone = request.getParameter("phone");
+                String email = request.getParameter("mail");
+                Language lang =Language.valueOf(request.getParameter("lang"));
+                new UserDAO().insert(new User(name, password, role, phone, email, lang));
+                showUserTable(request, response);
                 break;
             default:
                 showNewForm(request, response, "success_admin.jsp");
