@@ -1,4 +1,6 @@
-<%--
+<%@ page import="ua.mkorniie.entity.User" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: mkorniie
   Date: 2019-06-11
@@ -9,40 +11,45 @@
 <html>
 <head>
     <title>Users</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<%--    <link rel="stylesheet" href="http://localhost:8080/templates/css/style.css">--%>
-    <link rel = "icon" href ="https://www.pinclipart.com/picdir/big/163-1634137_brochure-markant-online-books-icons-clipart.png"
-          type = "image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <%--    <link rel="stylesheet" href="http://localhost:8080/templates/css/style.css">--%>
+    <link rel="icon"
+          href="https://www.pinclipart.com/picdir/big/163-1634137_brochure-markant-online-books-icons-clipart.png"
+          type="image/x-icon">
 </head>
 <body>
 <table class="table">
     <thead>
     <tr>
         <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">Name</th>
+        <th scope="col">Role</th>
+        <th scope="col">Phone number</th>
+        <th scope="col">Email</th>
+        <th scope="col">Language</th>
+        <th scope="col">Delete</th>
+        <th scope="col">Change privileges</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-    </tr>
+            <%  List<User> users = (List<User>) request.getAttribute("users");
+            for(User user : users){    %>
+            <tr>
+                <th scope="row"><%=user.getId()%>
+                </th>
+                <td><%=user.getFullName()%></td>
+                <td><%=user.getRole()%></td>
+                <td><%=user.getPhone()%></td>
+                <td><%=user.getEmail()%></td>
+                <td><%=user.getLanguage()%></td>
+                <td><a href="/admin-users?method=remove&id=<%=user.getId()%>">Remove</a></td>
+                <td>
+                    <a href="/admin-users?method=priviledge_a&id=<%=user.getId()%>">To Admin</a> |
+                    <a href="/admin-users?method=priviledge_u&id=<%=user.getId()%>">To User</a>
+                </td>
+            </tr>
+    <% } %>
     </tbody>
 </table>
 

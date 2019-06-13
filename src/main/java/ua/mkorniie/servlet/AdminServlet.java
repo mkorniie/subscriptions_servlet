@@ -1,7 +1,12 @@
 package ua.mkorniie.servlet;
 
 import ua.mkorniie.DAO.PublisherDAO;
+import ua.mkorniie.DAO.UserDAO;
 import ua.mkorniie.entity.Publisher;
+import ua.mkorniie.entity.User;
+import ua.mkorniie.util.DeleteUserCommand;
+import ua.mkorniie.util.ToAdminCommand;
+import ua.mkorniie.util.ToUserCommand;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,8 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PushbackInputStream;
-import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 
 @WebServlet(urlPatterns = {"/admin", "/admin-users", "/admin-tables", "/admin-stats", "/admin-update"})
@@ -45,7 +49,7 @@ public class AdminServlet extends HttpServlet {
                 processAdminRequest(request, response);
                 break;
             case "/admin-users":
-                showNewForm(request, response, "users_management.jsp");
+                processUserManagementRequest(request, response);
                 break;
             case "/admin-tables":
                 showNewForm(request, response, "tables.jsp");
@@ -83,8 +87,32 @@ public class AdminServlet extends HttpServlet {
                 new PublisherDAO().delete(num);
             } catch (NumberFormatException e) {
             }
-
         }
         showAdminPage(request, response);
+    }
+
+    private void processUserManagementRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException{
+        String method = request.getParameter("method");
+        String id = request.getParameter("id");
+
+        if(method != null && id != null) {
+            if (method.equals("remove"))
+                new DeleteUserCommand().execute(id);
+            else if (method.equals("priviledge_a")){
+                new ToAdminCommand().execute(id);
+            }
+            else if (method.equals("priviledge_u")){
+                new ToUserCommand().execute(id);
+            }
+        }
+        showUserTable(request, response);
+    }
+
+    private void showUserTable(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        List<User> userList = new UserDAO().selectAll();
+        request.setAttribute("users", userList);
+        showNewForm(request, response, "users_management.jsp");
     }
 }

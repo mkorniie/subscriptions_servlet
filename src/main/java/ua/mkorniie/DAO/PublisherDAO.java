@@ -9,7 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PublisherDAO extends AbstractDAO{
+public class PublisherDAO{
     private static final String INSERT_USERS_SQL = "INSERT INTO publishers" + "  (name, country, description) VALUES " +
             " (?, ?, ?);";
 
@@ -112,7 +112,14 @@ public class PublisherDAO extends AbstractDAO{
     }
 
     public boolean delete(int id) {
-        return super.delete(id, DELETE_USERS_SQL);
+        boolean rowDeleted = false;
+        try (Connection connection = Connector.getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
+            statement.setInt(1, id);
+            rowDeleted = statement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rowDeleted;
     }
 
 

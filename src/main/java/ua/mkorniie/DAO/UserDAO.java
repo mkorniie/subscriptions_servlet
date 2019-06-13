@@ -8,7 +8,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDAO extends AbstractDAO{
+public class UserDAO{
     private String jdbcURL = "jdbc:mysql://localhost:3306/workdb?useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private String jdbcUsername = "root";
     private String jdbcPassword = "";
@@ -139,7 +139,14 @@ public class UserDAO extends AbstractDAO{
     }
 
     public boolean delete(int id) {
-        return super.delete(id, DELETE_USERS_SQL);
+        boolean rowDeleted = false;
+        try (Connection connection = Connector.getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
+            statement.setInt(1, id);
+            rowDeleted = statement.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return rowDeleted;
     }
 
     //TODO: refactor
@@ -153,6 +160,7 @@ public class UserDAO extends AbstractDAO{
             statement.setString(4, object.getPhone());
             statement.setString(5, object.getEmail());
             statement.setString(6, object.getLanguage().toString());
+            statement.setInt(7, object.getId());
 
             rowUpdated = statement.executeUpdate() > 0;
         } catch (SQLException e) {
